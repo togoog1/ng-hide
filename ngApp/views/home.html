@@ -1,0 +1,33 @@
+<h2>Home</h2>
+
+<div>
+  <button ng-click="vm.create()">CREATE</button>
+  <button ng-click="vm.read()">READ</button>
+  <button ng-click="vm.update()">UPDATE</button>
+  <button ng-click="vm.delete()">DELETE</button>
+</div>
+
+<div style="padding-top: 20px;">
+  <a href="/">Logout</a>
+</div>
+
+
+
+<div class="container">
+    <div class="page-header text-center">
+       <h1>ngShow and ngHide: Functions</h1>
+    </div>
+
+      <div class="col-xs-8 jumbotron text-center">
+
+        <!-- show if our function evaluates to false -->
+        <div ng-show="isAdmin">
+          <h2>this is an admin</h2>
+        </div>
+        <!-- show if our function evaluates to false -->
+        <div ng-show="!isAdmin">
+          <h2>this is not an admin.</h2>
+        </div>
+      </div>
+    </div>
+</div>
